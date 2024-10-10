@@ -105,7 +105,7 @@ cd Snort_Detection
 
 4. **데이터베이스 마이그레이션 실행**
    ```bash
-   python manage.py makemigrations
+   python manage.py makemigrations detection
    python manage.py migrate
    ```
 
@@ -115,9 +115,13 @@ cd Snort_Detection
    ```
 
 ### 3. 로그 데이터 수집
-Snort 로그 데이터를 수집하여 Django 데이터베이스에 저장하려면 다음 스크립트를 실행하세요:
+Snort 로그 데이터를 Django 데이터베이스에 저장해야 합니다.
+서버가 열린 터미널은 그대로 두고, 새로운 터미널을 열어서 다음 스크립트를 입력하세요:
+
 ```bash
-python log_to_db.py
+cd Snort_Detection/BE
+source new_venv/bin/activate
+python3 log_to_db.py
 ```
 위 스크립트를 실행한 후에 "{Django_서버주소}/api/alerts/"에 접속하여 데이터가 잘 들어갔는지 확인합니다.
 
@@ -130,11 +134,12 @@ python log_to_db.py
    ```
 
 2. **종속성 설치**
+   </br> 가상환경이 아니라 로컬 환경에 설치해야 합니다.
    ```bash
    npm install
    ```
 
-3. **React 개발 서버 실행**
+4. **React 개발 서버 실행**
    ```bash
    npm start
    ```
@@ -162,3 +167,4 @@ python log_to_db.py
 ## 문제 해결
 - **ModuleNotFoundError**: 모듈을 찾을 수 없다는 오류가 발생하면, 가상환경이 활성화되어 있는지 확인하고 모든 종속성이 설치되어 있는지 확인하세요.
 - **CORS 문제**: `django-cors-headers`가 설치되어 있고, React 프론트엔드에서 API 요청을 허용하도록 `settings.py`에서 올바르게 설정되어 있는지 확인하세요.
+
