@@ -8,6 +8,11 @@
 - **프론트엔드**: React, Chart.js (데이터 시각화용)
 - **네트워크 IDS**: Snort
 
+### 완성 화면
+<div align="center">
+<img src = "https://github.com/user-attachments/assets/d3e40faf-bc8b-4c29-9529-f0281f567f26" width="550" height="600"/>
+</div>
+
 ## 프로젝트 구조
 
 이 프로젝트는 두 개의 주요 부분으로 구성됩니다:
