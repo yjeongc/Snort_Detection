@@ -1,0 +1,25 @@
+# Python 가상환경 폴더
+new_venv/
+
+# Byte-compiled Python 파일
+__pycache__/
+*.py[cod]
+
+# 환경설정 파일
+*.env
+
+# 데이터베이스 파일
+*.sqlite3
+
+# 노드 모듈 (React 프로젝트에서 사용)
+node_modules/
+
+# 빌드 디렉토리 (React 빌드 파일)
+build/
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
